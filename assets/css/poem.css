@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.poem-container img {
+  width: 100%;
+  height: auto;
+}
+
+.poem-container {
+color: white;
+width: 100%;
+position: relative;
+
+}
+
+body {
+  background-color: #15a9ff;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+  text-align: justify;
+	top: 40%;
+  left: 10%;
+  text-align: center;
+  font-weight: bold;
+  
+  width: 60%;
+  
+  font-size: 22px;
+
+	animation-duration: 40s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-0 {
+position: absolute;
+  display: block;
+	top: 110px;
+  left: 10%;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  color: greenyellow;
+  
+  
+  font-size: 30px;
+
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-5 {
+  position: absolute;
+    display: block;
+    top: 150px;
+    left: 15%;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    color: burlywood;
+    
+    
+    font-size: 20px;
+  
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.item-4 {
+  position: absolute;
+  display: block;
+	bottom: 5%;
+  left: 22%;
+  font-weight: bold;
+  color: lightblue;
+
+  width: 70%;
+  
+  font-size: 2em;
+
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+  color: rgb(255, 255, 136);
+}
+
+.item-2{
+	animation-name: anim-2;
+  color: rgb(255, 145, 0);
+}
+
+.item-3{
+	animation-name: anim-3;
+  color: rgb(52, 238, 45);
+
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 30%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 30%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 30%; opacity: 0; }
+}

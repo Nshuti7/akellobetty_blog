@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    margin: 0;
+    background: #15a9ff;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  .group {
+    margin-top: 80px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .item {
+    width: 15vw;
+    height: 70vh;
+    background-position: center;
+    background-size: 75vh;
+    margin: 1vw;
+    border-radius: 3vw;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
