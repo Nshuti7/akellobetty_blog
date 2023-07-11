@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poem</title>
+    <link rel="stylesheet" href="./assets/css/icon.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/poem.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2><span>MY</span>POEM</h2>
+        <nav>
+          <a href="index.html" target="_blank">Home</a>
+          <a href="pictures.html" target="_blank">Pictures</a>
+          <a href="index.html#services" target="_blank">Stories</a>
+          <a href="#contact" target="_blank">Contact</a>
+          <a href="https://africavotes.com/n/akello.betty" target="_blank"
+            >Go To Vote</a
+          >
+        </nav>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <a href="index.html" target="_blank">Home</a>
+      <a href="pictures.html" target="_blank">Pictures</a>
+      <a href="index.html#services" target="_blank">Stories</a>
+      <a href="#contact" target="_blank">Contact</a>
+      <a href="https://africavotes.com/n/akello.betty" target="_blank"
+        >Go To Vote</a
+      >
+    </nav>
+    <main class="main2">
+      <div class="poem-container">
+        <img src="./assets/images/poembg.jpeg" />
+        <p class="item-0">THE WAY I LOVE TESOI</p>
+        <p class="item-5">(EPONE AMINAR EONG TESO!)</p>
+        <p class="item-1">
+          Teso the land of my birth, Golden plains, the finest on earth, A place
+          where sun shines so bright, My heart beats with pure delight Teso the
+          land of my birth,
+        </p>
+        <p class="item-2">
+          Where the people are warm and full of mirth And the ajon, oh sweet and
+          tasty brew Is a flavor that's been with me since I was new. Teso the
+          land of my birth,
+        </p>
+        <p class="item-3">
+          Where the beauty of nature is of great worth, And the ajon, acoa naka
+          lteso Makes my life full and exciting
+        </p>
+        <p class="item-4">~Akello Betty</p>
+      </div>
+
+      <section class="contact2" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="social-buttons">
+            <a
+              id="facebook_link"
+              href="https://www.facebook.com/karungi.melody.98"
+              target="_blank"
+              class="social-button social-button--facebook"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"
+                ><img src="./assets/icons/facebook.svg"
+              /></i>
+            </a>
+            <a
+              id="linkedin_link"
+              href="https://www.tiktok.com/@miss_akello_betty"
+              target="_blank"
+              class="social-button social-button--npmjs"
+              aria-label="npmjs"
+            >
+              <i class="fab fa-linkedin-in"
+                ><img src="./assets/icons/titok.png" alt=""
+              /></i>
+            </a>
+            <a
+              id="whatsapp_link"
+              href="https://wa.me/256773060865"
+              class="social-button social-button--Whatsapp"
+              aria-label="Whatsapp"
+            >
+              <i class="fab fa-snapchat-ghost"
+                ><img src="./assets/icons/whatsapp .svg" alt=""
+              /></i>
+            </a>
+            <a
+              id="instagram_link"
+              href="https://www.instagram.com/miss_akello_betty"
+              target="_blank"
+              class="social-button social-button--github"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"
+                ><img src="./assets/icons/instagram.svg" alt=""
+              /></i>
+            </a>
+            <a
+              id="email_link"
+              href="mailto:akellobettinah@gmail.com?"
+              subject="HELLO BETTY"
+              class="social-button social-button--linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"
+                ><img src="./assets/icons/email.png"
+              /></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="cp-text">
+            © Copyright 2023 Akello Betty. All rights reserved.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var targetLinks = document.querySelectorAll(".social-buttons a");
+
+        // Delayed opening for each link within the .social-buttons div
+        for (var i = 0; i < targetLinks.length; i++) {
+          (function (link) {
+            link.addEventListener("click", function (event) {
+              event.preventDefault();
+              setTimeout(function () {
+                window.open(link.getAttribute("href"), "_blank");
+              }, 1000);
+            });
+          })(targetLinks[i]);
+        }
+      });
+    </script>
+    <script src="./assets/js/pictures.js"></script>
+    <script src=".//assets/js/main.js"></script>
+  </body>
+</html>
